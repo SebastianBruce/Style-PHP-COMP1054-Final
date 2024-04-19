@@ -41,14 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Congratulations! You are eligible for the job. Your interview is in 1 week!";
         
         // Redirect to a different page
-        header("Location: success.php");
+        header("Location: success.html");
         exit;
 
     } else {
         $message = "We are sorry, we have moved on with other candidates.";
 
         // Redirect to a different page
-        header("Location: fail.php");
+        header("Location: fail.html");
         exit;
     }
 }
@@ -89,7 +89,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Job Application Form</p>
+        <div>
+            <p>&copy; 2024 Sebastian Bruce. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Contact Us</p>
+            <ul>
+                <li>Email: fake@email.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Fake Street, City</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,46 +1,83 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #333;
     color: #fff;
+    padding: 1.5rem 0;
     text-align: center;
-    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 input[type="text"],
-input[type="number"],
-input[type="date"] {
+input[type="number"] {
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
 button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -52,8 +89,174 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: #333;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    text-align: left;
+    padding-left: 2rem;
+    width: 45%;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer div ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100; /* Ensure footer is above other content */
+}
+
+footer div {
+    text-align: left;
+    padding-left: 2rem;
+    width: 45%;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer div ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-bottom: 4rem; /* Adjust padding to accommodate footer */
+    }
+    
+    footer {
+        position: fixed; /* Change position to fixed to prevent overlapping */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+    }
+
+    footer div {
+        display: none;
+    }
+    
+    footer div:first-child {
+        display: block;
+    }
 }
 
