@@ -68,25 +68,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Job Application Form</h1>
     </header>
     <main>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label for="diploma">Diploma:</label>
-                <input type="text" id="diploma" name="diploma" required>
-            </div>
-            <div class="form-group">
-                <label for="experience">Years of Experience:</label>
-                <input type="number" id="experience" name="experience" required>
-            </div>
-            <div class="form-group">
-                <label for="graduation">Graduation Date:</label>
-                <input type="number" id="graduation" name="graduation" value="2022" required>
-            </div>
-            <div class="form-group">
-                <label for="skill">Important Skill:</label>
-                <input type="text" id="skill" name="skill" required>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="form-container">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <div class="form-group">
+                    <label for="diploma">Diploma:</label>
+                    <input type="text" id="diploma" name="diploma" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" required>
+                </div>
+                <div class="form-group">
+                    <label for="graduation">Graduation Date:</label>
+                    <input type="number" id="graduation" name="graduation" value="2022" required>
+                </div>
+                <div class="form-group">
+                    <label for="skill">Important Skill:</label>
+                    <input type="text" id="skill" name="skill" required>
+                </div>
+                <div class = "submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <div>
