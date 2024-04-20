@@ -9,7 +9,7 @@ function sanitizeInput($input) {
 
 // Define eligibility criteria
 $diplomaCriteria = array("cs", "cmpg", "cp", "programming", "coding", "computer science");
-$skillCriteria = array("php", "java", "python", "c#", "c++", "javascript");
+$skillCriteria = array("php", "java", "python", "c#", "c++", "javascript", "html", "css");
 
 // Initialize eligibility counter
 $eligibility = 0;
@@ -38,15 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Output eligibility message
     if ($eligibility == 4) {
-        $message = "Congratulations! You are eligible for the job. Your interview is in 1 week!";
-        
         // Redirect to a different page
         header("Location: success.html");
         exit;
 
     } else {
-        $message = "We are sorry, we have moved on with other candidates.";
-
         // Redirect to a different page
         header("Location: fail.html");
         exit;
