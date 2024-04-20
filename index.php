@@ -39,12 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Output eligibility message
     if ($eligibility == 4) {
         // Redirect to a different page
-        header("Location: success.html");
+        header("Location: pages/success.html");
         exit;
 
     } else {
         // Redirect to a different page
-        header("Location: fail.html");
+        header("Location: pages/fail.html");
         exit;
     }
 }
@@ -56,8 +56,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
